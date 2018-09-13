@@ -5,6 +5,14 @@ public class Deque {
     private int items;
     private int maxSize;
 
+    public boolean isEmpty() {
+        return (items == 0);
+    }
+
+    public boolean isFull() {
+        return (items == maxSize);
+    }
+
     public Deque(int s){
         maxSize = s;
         deque = new int[maxSize];
@@ -17,7 +25,7 @@ public class Deque {
     public void insertLeft(int i) {
         if (front == -1)
             front = maxSize-1;
-        deque[front--]=i;
+        deque[--front]=i;
         items++;
 
     }
@@ -38,6 +46,26 @@ public class Deque {
     }
 
     public int removeRight(){
+        int temp = deque[rear--];
+        if (rear == 0)
+            rear = maxSize;
+        items--;
+        return temp;
 
     }
 }
+class DequeMain{
+    public static void main(String[] args) {
+        Deque q = new Deque(5);
+        q.insertLeft(10);
+        q.insertLeft(20);
+        q.insertLeft(30);
+        q.insertLeft(40);
+
+        while (!q.isEmpty()){
+            int item = q.removeLeft();
+            System.out.print(item + " ");
+        }
+        }
+    }
+
