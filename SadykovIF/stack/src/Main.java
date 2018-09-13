@@ -11,11 +11,9 @@ public class Main{
 
         q.insert(50);
         q.insert(60);
-        q.insert(70);
-        q.insert(80);
         while (!q.isEmpty()){
             int n = q.remove();
-            System.out.println(n);
+            System.out.print(n + " ");
         }
     }
 }
