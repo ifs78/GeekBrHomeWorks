@@ -23,7 +23,7 @@ public class Deque {
 
 
     public void insertLeft(int i) {
-        if (front == -1)
+        if (front == 0)
             front = maxSize-1;
         deque[--front]=i;
         items++;
@@ -57,10 +57,11 @@ public class Deque {
 class DequeMain{
     public static void main(String[] args) {
         Deque q = new Deque(5);
-        q.insertLeft(10);
-        q.insertLeft(20);
+        q.insertRight(10);
+        q.insertRight(20);
         q.insertLeft(30);
         q.insertLeft(40);
+        q.insertRight(70);
 
         while (!q.isEmpty()){
             int item = q.removeLeft();
