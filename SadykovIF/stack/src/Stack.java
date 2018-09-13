@@ -23,4 +23,5 @@ public class Stack {
    public char peek(){
        return stack[top];
    }
+
 }

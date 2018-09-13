@@ -48,6 +48,7 @@ class PriorityQApp{
             int item = q.remove();
             System.out.print(item + " ");
         }
-        System.out.println("");
+
+         System.out.println("");
     }
 }

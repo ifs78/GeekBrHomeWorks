@@ -9,6 +9,7 @@ public class JavaStack {
             input = getString();
             if (input.equals("")) break;
 
+
             Reverse rv = new Reverse(input);
             rv.invert();
         }

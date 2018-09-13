@@ -39,7 +39,6 @@ public class Queue {
         items--;
         return temp;
     }
-
     public int peek() {
         return queue[front];
     }

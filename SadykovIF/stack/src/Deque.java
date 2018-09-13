@@ -27,7 +27,6 @@ public class Deque {
             front = maxSize-1;
         deque[--front]=i;
         items++;
-
     }
 
     public void insertRight(int i) {

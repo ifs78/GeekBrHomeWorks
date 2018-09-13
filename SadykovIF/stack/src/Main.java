@@ -8,7 +8,6 @@ public class Main{
         q.insert(50);
         q.remove();
         q.remove();
-
         q.insert(50);
         q.insert(60);
         while (!q.isEmpty()){
