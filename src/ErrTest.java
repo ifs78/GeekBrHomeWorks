@@ -28,13 +28,10 @@ public class ErrTest {
 class MyArraySizeException extends Exception {
     MyArraySizeException(String message) {
         super(message);
-
     }
 }
 class MyArrayDataException extends RuntimeException {
-
     MyArrayDataException(String message) {
         super(message);
-
     }
 }
