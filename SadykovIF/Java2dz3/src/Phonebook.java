@@ -21,7 +21,6 @@ import java.util.HashMap;
             System.out.println("Иванов " + get("Иванов"));
             System.out.println("Петров " + get("Петров"));
 
-
         }
         private static void add(String lastname, String tel){
             ArrayList<String> spr = hm.get(lastname);

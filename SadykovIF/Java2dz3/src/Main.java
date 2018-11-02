@@ -32,6 +32,7 @@ public class Main {
              hm.put(am, hm.get(am)+1);
      }
 
+     
      System.out.print("Уникальные ");
          for (String am : hm.keySet()){
             if (hm.get(am) == 1) System.out.print(am + " ");}
